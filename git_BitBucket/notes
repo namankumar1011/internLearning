@@ -1,0 +1,189 @@
+Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+
+It is used for:
+
+Tracking code changes
+Tracking who made changes
+Coding collaboration
+
+What does Git do?
+Manage projects with Repositories
+Clone a project to work on a local copy
+Control and track changes with Staging and Committing
+Branch and Merge to allow for work on different parts and versions of a project
+Pull the latest version of the project to a local copy
+Push local updates to the main project
+
+Working with Git
+Initialize Git on a folder, making it a Repository
+Git now creates a hidden folder to keep track of changes in that folder
+When a file is changed, added or deleted, it is considered modified
+You select the modified files you want to Stage
+The Staged files are Committed, which prompts Git to store a permanent snapshot of the files
+Git allows you to see the full history of every commit.
+You can revert back to any previous commit.
+Git does not store a separate copy of every file in every commit, but keeps track of changes made in each commit!
+
+For Windows, you can use Git bash, which comes included in Git for Windows. For Mac and Linux you can use the built-in terminal.
+
+Now let Git know who you are. This is important for version control systems, as each Git commit uses this information:
+
+Note: Use global to set the username and e-mail for every repository on your computer.
+If you want to set the username/e-mail for just the current repo, you can remove global
+
+Now Git is aware of the file, but has not added it to our repository!
+Files in your Git repository folder can be in one of 2 states:
+Tracked - files that Git knows about and are added to the repository
+Untracked - files that are in your working directory, but not added to the repository
+When you first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage them, or add them to the staging environment.
+
+As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.
+Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.
+
+You can also stage more than one file at a time.
+
+Git Commit:
+Since we have finished our work, we are ready move from stage to commit for our repo.
+Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
+
+When we commit, we should always include a message.
+By adding clear messages to each commit, it is easy for yourself (and others) to see what has changed and when.
+
+The commit command performs a commit, and the -m "message" adds a message.
+
+Sometimes, when you make small changes, using the staging environment seems like a waste of time. It is possible to commit changes directly, skipping the staging environment. The -a option will automatically stage every changed, already tracked file.
+
+To view the history of commits for a repository, you can use the log command:
+
+Git Help
+If you are having trouble remembering commands or options for commands, you can use Git help.
+There are a couple of different ways you can use the help command in command line:
+git command -help - See all the available options for the specific command
+git help --all - See all possible commands
+
+Git Branch:
+In Git, a branch is a new/separate version of the main repository.
+Let's say you have a large project, and you need to update the design on it.
+
+With Git:
+With a new branch called new-design, edit the code directly without impacting the main branch
+EMERGENCY! There is an unrelated error somewhere else in the project that needs to be fixed ASAP!
+Create a new branch from the main project called small-error-fix
+Fix the unrelated error and merge the small-error-fix branch with the main branch
+You go back to the new-design branch, and finish the work there
+Merge the new-design branch with main (getting alerted to the small error fix that you were missing)
+Branches allow you to work on different parts of a project without impacting the main branch.
+
+When the work is complete, a branch can be merged with the main project.
+You can even switch between branches and work on different projects without them interfering with each other.
+Branching in Git is very lightweight and fast!
+
+Merge conflict:
+It occurs when two or more developers are working on the separate branches pulled from the master branch, now suppose dev1 did some changes on line 2 and dev2 also did some changes on line 2. After that when they both will merge the separate branches to the master branch then merge conflict will occur stating that which changes do you want to incorporate.
+Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file. You must resolve this merge conflict with a new commit before you can merge these branches.
+To deal deal with merge conflicts:
+First navigate to the files having merge conflicts:
+open that file on your code editor:
+
+example:
+To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD(branch name of dev1). Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a(branch name of dev2).
+
+<<<<<<<HEAD
+open an issue
+======
+ask your question in irc
+
+> > > > > > > branch-a
+
+Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge. In this example, both changes are incorporated into the final merge:
+
+Then add and commit the file to the branch and then merge the branch to the master branch.
+
+Bit Bucket:
+Copy the URL after creating the repository:
+
+git remote add origin URL
+specifies that you are adding a remote repository, with the specified URL, as an origin to your local Git repo. put the URL without quotes.
+
+Now we are going to push our master branch to the origin url, and set it as the default remote branch:
+git push --set-upstream origin master
+
+BitBucket pull:
+When working as a team on a project, it is important that everyone stays up to date.
+Any time you start working on a project, you should get the most recent changes to your local copy.
+With Git, you can do that with pull.
+pull is a combination of 2 different commands:
+
+fetch:
+git fetch origin
+fetch gets all the change history of a tracked branch/repo.
+So, on your local Git, fetch updates to see what has changed on Bitbucket:
+
+merge:
+git merge origin/master
+merge combines the current branch, with a specified branch.
+We have confirmed that the updates are as expected, and we can merge our current branch (master) with origin/master:
+
+pull:
+git pull
+But what if you just want to update your local repository, without going through all those steps?
+pull is a combination of fetch and merge. It is used to pull all changes from a remote repository into the branch you are working on.
+
+push:
+git push origin
+after you modify your local files then do staging and commiting on your local branch:
+now you can push the content of local modified branch to your remote repo
+
+pulling a branch:
+once we have created a branch or someone else has created branch we can pull that branch
+by checking the available branches:
+git branch -a //lists all the branches under the remote repo
+after checking the available branches we can shift to other branches by:
+git checkout html-skeleton //html-skeleton is branch name
+after we can pull the latest data provided in this branch by:
+git pull
+
+pushing a branch:
+after creating a branch locally in our system and updating and adding content:
+after we are done we can stage and commit our changes:
+after that we can push the branch to the origin by:
+git push origin update-readme //update-readme is a branch name
+now a new branch will be visible on the dashboard
+
+If the changes look good, you can go forward, creating a pull request:
+A pull request is how you propose changes. You can ask some to review your changes or pull your contribution and merge it into their branch.
+Since this is your own repository, you can merge your pull request yourself:
+
+The GitHub flow works like this:
+Create a new Branch
+Make changes and add Commits
+Open a Pull Request
+Review
+Deploy
+Merge
+
+fork:
+A fork is a copy of a repository only in the version control and not in our local system. This is useful when you want to contribute to someone else's project or start your own project based on theirs.
+
+clone:
+A clone is a full copy of a repository, including all logging and versions of files.
+git clone URL
+
+Basically, we have a full copy of a repository, whose origin we are not allowed to make changes to.
+Let's see how the remotes of this Git is set up by:
+git remote -v
+
+to start working on our own fork:
+First, we rename the original origin remote:
+git remote rename origin upstream //renamed the cloned repo origin to upstream
+then copy the fork url:
+git remote add origin URL
+
+Now we have 2 remotes:
+origin - our own fork, where we have read and write access
+upstream - the original, where we have read-only access
+
+We have made a lot of changes to our local Git.
+Now we push them to our Bitbucket fork:
+commit the changes:
+git push origin

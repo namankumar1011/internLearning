@@ -1,0 +1,15 @@
+The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".
+With the else statement we can run a block of code once when the condition no longer is true:
+Note that range(6) is not the values of 0 to 6, but the values 0 to 5.
+The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3):
+
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+A function can return data as a result.
+In Python a function is defined using the def keyword:
+If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
+This way the function will receive a tuple of arguments, and can access the items accordingly:
+You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+
+
+

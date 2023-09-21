@@ -1,0 +1,33 @@
+
+Python 3.6 uses the input() method.
+Python 2.7 uses the raw_input() method.
+
+This function first takes the input from the user and converts it into a string. The type of the returned object always will be <type ‘str’>. It does not evaluate the expression it just returns the complete statement as String.
+To make sure a string will display as expected, we can format the result with the format() method.
+The format() method allows you to format selected parts of a string.
+Sometimes there are parts of a text that you do not control, maybe they come from a database, or user input?
+To control such values, add placeholders (curly brackets {}) in the text, and run the values through the format() method:
+
+There are various function that are used to take as desired input few of them are : –
+int(input())
+float(input())
+
+Taking multiple inputs from user in Python
+Using split() method
+Using List comprehension
+
+
+
+Python print() function prints the message to the screen or any other standard output device.
+Syntax: 
+print(value(s), sep= ' ', end = '\n', file=file, flush=flush)
+Parameters: 
+
+value(s): Any value, and as many as you like. Will be converted to a string before printed
+sep=’separator’ : (Optional) Specify how to separate the objects, if there is more than one.Default :’ ‘
+end=’end’: (Optional) Specify what to print at the end.Default : ‘\n’
+file : (Optional) An object with a write method. Default :sys.stdout
+flush : (Optional) A Boolean, specifying if the output is flushed (True) or buffered (False). Default: False
+
+
+The string modulo operator ( % ) is still available in Python(3.x) and is widely used. But nowadays the old style of formatting is removed from the language. 

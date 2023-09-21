@@ -1,0 +1,18 @@
+Python is a server side programming language developed by Guido van Rossum, and released in 1991.
+It can be used in different platforms like windows, mac, linux, etc.
+It has a very simple syntax to follow.
+Latest and widely used version of python is python3.
+Unlike other programming languages python does not use semicolons or brackets instead it uses a new line to complete the previous line.
+Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+To run a python program go to terminal -> go to the storage path where you saved the program -> then write python nameOfTheFile.py
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+Python uses indentation to indicate a block of code.  
+comments in python are provided with a "#" sign, it does not have a multiline comment
+
+
+
+
+
+
+
+

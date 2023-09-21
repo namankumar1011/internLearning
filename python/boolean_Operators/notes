@@ -1,0 +1,28 @@
+Booleans represent one of two values: True or False.
+The bool() function allows you to evaluate any value, and give you True or False in return,
+Almost any value is evaluated to True if it has some sort of content.
+Any string is True, except empty strings.
+Any number is True, except 0.
+Any list, tuple, set, and dictionary are True, except empty ones.
+
+Python divides the operators in the following groups:
+
+Arithmetic operators: rest all are same except below two
+**	Exponentiation	x ** y	
+//	Floor division	x // y
+
+Assignment operators
+Comparison operators consists of equal, not equal, greater, etc
+Logical operators consists of and, or, not
+
+Identity operators: Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
+example:
+is 	- Returns True if both variables are the same object	x is y	
+is not	- Returns True if both variables are not the same object	x is not y
+
+Membership operators: Membership operators are used to test if a sequence is presented in an object:
+example:
+in 	- Returns True if a sequence with the specified value is present in the object	x in y	
+not in	- Returns True if a sequence with the specified value is not present in the object	x not in y
+
+Bitwise operators: consists of &,|,etc

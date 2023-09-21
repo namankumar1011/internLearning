@@ -1,0 +1,78 @@
+to check the version of git use:
+git --version
+
+Change the user name and e-mail address to your own:
+git config --global user.name "w3schools-test"
+git config --global user.email "test@w3schools.com"
+
+mkdir makes a new directory.
+cd changes the current working directory.
+
+after navigating to the file where you want to save the project, use following command to initialize empty Git repository.
+git init
+
+ls will list the files in the directory.
+
+Then we check the Git status and see if it is a part of our repo:
+
+to add files to the staging environment before committing we use:
+git add index.html
+
+add all files in the current directory to the Staging Environment:
+git add --all or we can use git add -A
+
+to commit the files from the staging environment:
+git commit -m "First release of Hello World!"
+
+Note: here -m is used to put the message
+
+to directly commit without staging we use:
+git commit -a -m "Updated index.html with a new line"
+
+Note: -a is used if you don't want to stage, however it is not recommended
+
+And check the short status of our repository:
+git status --short
+
+Note: Short status flags are:
+?? - Untracked files
+A - Files added to stage
+M - Modified files
+D - Deleted files
+
+To view the history of commits for a repository, you can use the log command:
+git log
+
+create a new branch with the name hello-world-pages:
+git branch hello-world-images
+
+Let's confirm that we have created a new branch:
+git branch //command
+hello-world-images //output
+
+- master //output
+
+the \* beside master specifies that we are currently on that branch.
+
+checkout is the command used to check out a branch. Moving us from the current branch, to the one specified at the end of the command:
+git checkout hello-world-images
+Switched to branch 'hello-world-images' //output
+Now we have moved our current workspace from the master branch, to the new branch
+
+now we can make changes just like we do in other files like add, commit, status
+
+Note: Using the -b option on checkout will create a new branch, and move to it, if it does not exist, basically a shortform to branch and checkout at the same time.
+
+To switch between master branch or to any other branch:
+git checkout master //instead of master specify any other branch name
+Switched to branch 'master' //output
+
+to merge branch:
+first step is to go the branch where you want to merge the modified branch:
+suppose we need to merge to the master branch:
+so then first we switch to master branch:
+git checkout master
+git merge emergency-fix
+
+As master and emergency-fix are essentially the same now, we can delete emergency-fix, as it is no longer needed:
+git branch -d emergency-fix

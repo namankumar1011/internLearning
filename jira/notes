@@ -1,0 +1,214 @@
+JIRA is one of the most widely used open source testing tool used in manual testing.
+
+Our JIRA tutorial includes all topics of a testing tool such as Features, installation, issues, workflows, components, reports, etc.
+
+JIRA is a software testing tool developed by the Australian Company Atlassian. It is a bug tracking tool that reports all the issues related to your software or mobile apps. The word JIRA comes from the Japanese word, i.e., "Gojira" which means Godzilla.
+
+JIRA is based on the Agile methodology and the current version of the Jira is 6.
+
+advantages of jira:
+
+Projects: It is used to manage the defects very effectively.
+Issue: It is used to track and manage the defects/issues.
+Workflow: Processes the Issue/Defect life cycle. to follow the directed path of sdlc effectively.
+Search: Find with ease on the new and old versions we are building
+Dashboards: to track are personal or organization assignment and tasks we can have our own daashboard
+
+Why JIRA
+JIRA tool is used because of the following reasons:
+Plan, Track and Work Faster
+The main source of information
+Organize the documentation tasks
+Track the progress of our documentation
+Helps to meet the deadlines of a documentation release.
+Measures the time spent on documentation
+Provides feedback faster
+
+Waterfall model:
+Phases of waterfall model:
+
+1. requirement analysis
+2. Design
+3. Development
+4. Testing
+5. Deployment
+6. Maintainence
+
+advantages of waterfall model:
+simple and easy to understand
+specific deliverable and review process
+phases do not overlap
+
+Disadvantages of waterfall model:
+time to market is high - Product is released only when all the phases are completed.
+unexpected results - What you expect and you receive are mostly different as the customer has an idea as per the documents only about the product.
+not suitable for changing requirements - This model is not suitable for the projects where requirements are at a moderate to high risk of changing.
+
+Agile:
+Agile is a philosophy, i.e., a set of values and principles to make a decision for developing software.
+Agile is a time-boxed, iterative approach to build the projects incrementally instead of all at once.
+Agile is a practice that promotes continuous iterations of development and testing throughout the software.
+
+What is not agile:
+Conducting meetings
+requirements changing any time
+unstructured development
+no documentation
+
+Scrum:
+We have studied the Agile methodology where Agile is a set of beliefs which should be followed to develop the software development project. On these beliefs or values, there is many models have developed, and in which one of the models is a scrum.
+
+Scrum: Scrum is an agile framework that helps you to organize, iterate, and continue the same project that you are working on. In scrum, a product is built in the series of iterations known as sprints or parts.
+
+Sprint: Sprint is a time-boxed period in which the scrum team needs to finish the set amount of work. Each sprint has a specified timeline, i.e., 2 weeks to 1 month. The scrum team agrees with this timeline during the sprint planning meeting.
+
+Scrum Master: Scrum Master is defined as a facilitator or servant-leader to the Scrum development team. Scrum Master must ensure that scrum principles are followed.
+
+Scrum development team: A scrum development team is a collection of individual members that includes developers, QA, and scrum master. It decides and provides the effort estimate. The recommended size of the scrum team is between 5 and 9 members.
+
+Artifacts of scrum:
+The documentation and stuff which are prepared in scrum are known as Artifacts.
+
+Three artifacts are:
+Product backlog - Product Backlog is a collection of activities that need to be done within the project such as we need to create the login page, payment system, cart system, etc.
+
+Sprint backlog - We know that in a scrum, we break the scrum into 'n' number of sprints and the objective of a sprint is to bring the small functionality of the software and ship it to the client for demo. The 'n' number of sprint backlogs is equal to the 1 product backlog.
+
+Burndown chart - Burndown chart is the outcome of the sprint, which shows the progress in a sprint. After each sprint, we need to examine the progress of each sprint. The burndown chart tells how you are working on the sprint.
+
+There are three scrum roles:
+Product owner - that communicates with the client on the company side.
+Scrum master - that handles the daily scrum meet.
+team - developers and testers.
+
+Scrum Ceremonies:
+Sprint planning - here we plan the different sprints, the duration and the tasks.
+Daily scrum - The daily scrum meet to discuss what to do further and if there are any blockers how to resolve it.
+Sprint review - meeting with the client to conclude the sprint.
+
+Working of sprint:
+
+1. client/stakeholders
+2. product owner
+3. product backlog
+4. sprint planning
+5. sprint backlog
+6. sprint
+7. sprint delivery
+8. sprint review and retrospective
+
+Scrum Board:
+
+1. Product backlog
+2. sprint backlog
+3. scrum board - Scrum Board is a board that shows the status of all the activities that need to be done within this sprint.
+   Scrum Board consists of four status:
+   1. Open
+      The 'Open' status means that the tasks which are available in 'Open' are not yet started.
+   2. In progress
+      The 'In progress' status means the developers completed their tasks.
+   3. Testing
+      The 'testing' means that the task is in a testing phase.
+   4. Closed
+      The 'closed' means the task has been completed.
+
+Jira issues:
+JIRA Issue is used to track the individual pieces of work that has been completed or not. JIRA issue can be a software bug or any other issue. Once you have imported the project in Jira, you can create issues.
+
+issue types - Teams work together to break down the pieces of work into issues. Issues can represent software bugs, a project task, subtasks, or any other project work. Jira project comes with the default issue type, and you can also create your own issue type.
+
+There are three types of Issue types:
+
+1. JIRA Core Default Issue types
+   Task: The task is a work item done by the team but not connected directly to the user's requirements. For example, to upgrade the version of a product used by the teams.
+   Subtask: It is a part of another issue. It is used to break an issue into different pieces of work. While creating an issue, sub task issue is not given in the issue type field drop-down as it contains some parent issue, so we can say that subtask issue cannot be created independently.
+
+2. JIRA Software default issue types
+   Story: It is a requirement from the user's perspective.
+   Bug: It is a flaw in a product that needs to be fixed by the developers. It can be tracked with its own issue type to differentiate from other types of work.
+   Epic: An epic is a big issue that contains other issues.
+
+3. JIRA Service desk default issue types
+   Incident
+   Service Request
+   Change
+   Problem
+
+JIRA Workflow
+Workflow is a set of activities which are performed to track the status and the transition of an issue during the lifecycle of an issue.
+
+Where transition represents some work in the form of link between the two statuses when an issue moves from one status to another.
+
+Status: Status determines the impact of the work on the issue which is filed by the tester.
+
+Phases of jira workflow:
+
+1. TODO state
+2. In Progress state
+3. Done state
+
+There are two activities performed in the TODO state:
+
+1. Issue creation
+   When the tester finds a defect, then they log the defect in Jira tool. Once the defect is logged in a Jira tool, the unique ticket identification number is generated by a Jira tool. This process is known as issue creation.
+2. Summary and additional details
+   Issue creation requires some additional information which is to be added or updated to an issue such as issue description, priority, severity, components impacted, subtasks, upload screenshots, email history, etc. After adding all the details to an issue, Jira tool assigns the status as a TODO state.
+
+There are three activities performed in the In Progress state:
+
+1.  Assignee
+    When the issue is created, then it is assigned to a person or a team. After assigning the issue to a person, then the status changes to In Progress state.
+2.  Work Review
+    Work on the issue is first reviewed and monitored by the issue reporter, assignee, and other project's management folks. When the developer removes an issue, then it is first unit tested by the developer, and then the code review team reviews it. During the work review activity, the status remains in the In Progress state.
+3.  Quality Analysis
+    After code review, the changes are verified by the quality analysis team, which includes regression testing. If the QA team finds any problem in the changes, then the issue is reassigned to the developer otherwise QA team will close the issue which states that the issue has been fixed. During the Quality Analysis, the status remains in the In Progress state.
+
+One activity is performed in the Done state:
+
+1. Release to production Once the product has been developed and tested, then the product is released in the market. When the product is released in the market, then the status is changed to Done state.
+
+Jira Backlog
+A backlog is a set of activities or issues that the team needs to be resolved within a specific iteration. All the issues of your project are grouped in a backlog and sprint.
+
+In scrum backlog, you can perform the multiple activities such as create and update issues, drag and drop the issues to prioritize them, assign them to sprints, epics, versions, manage epics, etc.
+
+The following are the activities that can be performed in the scrum backlog:
+
+Add issues to the backlog
+Prioritize the backlog
+View and edit an issue's details
+Identify the workload for users
+Create subtasks
+Transition an issue
+Split an issue
+Delete an issue
+Find issue
+
+Jira Scrum Board
+Jira Scrum Board is a tool used to unite the teams to achieve a single goal and incremental-iterative delivery.
+
+Functions of Scrum Board
+Increase communication and transparency
+Promote sprint planning and iterative development
+Improve team focus and organization
+
+Following are the important terms related to a Scrum Board:
+Sprint
+Backlog
+User story
+Issue
+Epic
+Swimlane
+
+Bug:
+We can define the bug as an error, flaw or we can say that when the actual output does not match with the expected output, it is known as bug or defect. Both the terms, i.e., bug and defect are commonly used but the most popular is a bug. A bug can be generated at any stage of the SDLC(Software Development Life Cycle)
+
+A bug has its life cycle from the point when the bug is logged in to the point the bug is closed. Bug undergoes the following states:
+New
+Assigned
+Open
+Fixed
+Retesting
+Reopen
+Verified
+Closed
